@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>METZB Metalúrgica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts para tipografía elegante -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>METZB Metalúrgica</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- INICIO -->
+        <section id="inicio" class="seccion">
+            <div class="inicio-contenido">
+                <div class="inicio-texto">
+                    <h2>Bienvenidos a METZB Metalúrgica</h2>
+                    <p>Soluciones en metalurgia para empresas y particulares. Calidad, innovación y compromiso.</p>
+                </div>
+                <!-- Carrusel de fotos -->
+                <div class="carrusel-container">
+                    <div class="carrusel" id="carrusel">
+                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Metalurgia 1" class="carrusel-img visible">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Metalurgia 2" class="carrusel-img">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Metalurgia 3" class="carrusel-img">
+                    </div>
+                    <button class="carrusel-btn left" id="prev">&#10094;</button>
+                    <button class="carrusel-btn right" id="next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="seccion">
+            <h2>Servicios</h2>
+            <div class="servicios-lista">
+                <div class="servicio">
+                    <h3>Fabricación de estructuras metálicas</h3>
+                    <p>Diseño y construcción de galpones, tinglados, techos y más.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Rejas y portones</h3>
+                    <p>Soluciones seguras y personalizadas para hogares y empresas.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Escaleras y barandas</h3>
+                    <p>Fabricación e instalación de escaleras metálicas y barandas modernas.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Trabajos a medida</h3>
+                    <p>Proyectos personalizados según la necesidad de cada cliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRABAJOS -->
+        <section id="trabajos" class="seccion">
+            <h2>Trabajos Realizados</h2>
+            <div id="lista-trabajos"></div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="seccion">
+            <h2>Nosotros</h2>
+            <p>
+                METZB Metalúrgica es una empresa de <strong>Chacabuco, Buenos Aires</strong>, con más de 15 años de experiencia en el rubro, destacándose por la calidad y la innovación en cada proyecto.
+                Nuestro equipo está conformado por profesionales comprometidos con brindar soluciones eficientes y a la medida de las necesidades de nuestros clientes.
+            </p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <form class="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="info-contacto">
+                <p>Email: contacto@metzb.com</p>
+                <p>Teléfono: +54 123 456789</p>
+                <p>Dirección: Calle Ficticia 123, Chacabuco, Buenos Aires</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 METZB Metalúrgica. Todos los derechos reservados.</p>
+    </footer>
+    <script src="trabajos.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+</html>
